@@ -3,9 +3,11 @@
 A beginner-friendly full-stack Task Manager built with React, Tailwind CSS, Node.js, Express, and MongoDB. Users can register, log in, and manage their daily tasks.
 
 ## 🧱 Project Structure
+```
 task-manager/  
 ├── client/ # React frontend (UI)  
 └── server/ # Express backend (API + DB)
+```
 
 ---
 
