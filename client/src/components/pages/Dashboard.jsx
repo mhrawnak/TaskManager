@@ -1,6 +1,6 @@
-export const Dashbaord = () => {
+export const Dashboard = () => {
     return (
-        <div>
+        <div className="w-full h-screen bg-black">
             
         </div>
     )
