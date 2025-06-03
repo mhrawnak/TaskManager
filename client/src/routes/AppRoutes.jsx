@@ -1,10 +1,18 @@
-import {Routes , Route} from "react-router-dom"
+import { Routes, Route, Outlet } from "react-router-dom"
+import { NavBar } from "../common/NavBar"
 import { Dashboard } from "../components/pages/Dashboard"
 
-export const AppRoutes = () => {
-    return (
-        <Routes>
-            <Route path="/" element={<Dashboard />} />
-        </Routes>
-    )
-}
+const Layout = () => (
+  <>
+    <NavBar />
+    <Outlet />
+  </>
+)
+
+export const AppRoutes = () => (
+  <Routes>
+    <Route element={<Layout />}>
+      <Route path="/" element={<Dashboard />} />
+    </Route>
+  </Routes>
+)
